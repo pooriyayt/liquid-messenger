@@ -5,15 +5,15 @@
 </p>
 
 <p align="center">
-  <strong>پیام‌رسان مدرن، فوق‌سریع و امن تحت وب بر پایه معماری تلگرام وب نسخه Z، ۱۱ پوسته بصری اختصاصی، رمزنگاری کلاینت و سرور و وب‌اپلیکیشن مستقل (PWA)</strong><br>
-  <em>A high-performance, private, self-hosted web messenger engineered with Telegram Web Z design fidelity, 11 handcrafted theme palettes, client/server cryptographic pipelines, and full PWA offline readiness.</em>
+  <strong>پیام‌رسان مدرن، فوق‌سریع و امن تحت وب بر پایه معماری تلگرام وب نسخه Z، ۱۱ پوسته بصری اختصاصی، رمزنگاری کامل سمت سرور (Server-Side Encryption) و وب‌اپلیکیشن مستقل (PWA)</strong><br>
+  <em>A high-performance, private, self-hosted web messenger engineered with Telegram Web Z design fidelity, 11 handcrafted theme palettes, robust server-side at-rest encryption, and full PWA offline readiness.</em>
 </p>
 
 <p align="center">
   <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.1%20%7C%208.2%20%7C%208.3%20%7C%208.4-777bb4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.x" /></a>
   <a href="https://mariadb.org"><img src="https://img.shields.io/badge/MySQL-8.0%2B%20%7C%20MariaDB%2010.5%2B-4479a1?style=for-the-badge&logo=mysql&logoColor=white" alt="Database" /></a>
   <a href="https://web.dev/progressive-web-apps/"><img src="https://img.shields.io/badge/PWA-Installable%20%26%20Offline-39d6a4?style=for-the-badge&logo=pwa&logoColor=black" alt="PWA Ready" /></a>
-  <a href="#-امنیت-و-معماری-رمزنگاری--security--cryptography"><img src="https://img.shields.io/badge/Encryption-AES--256--GCM-0088cc?style=for-the-badge&logo=e&logoColor=white" alt="E2EE" /></a>
+  <a href="#-امنیت-و-معماری-رمزنگاری--security--cryptography"><img src="https://img.shields.io/badge/Encryption-Server--Side%20AES--256-0088cc?style=for-the-badge&logo=security&logoColor=white" alt="Server-Side Encryption" /></a>
   <a href="#-سیستم-توکن-و-۱۱-پوسته-اختصاصی--theming-engine"><img src="https://img.shields.io/badge/Themes-11%20Dynamic%20Palettes-9333ea?style=for-the-badge" alt="11 Themes" /></a>
   <a href="#-شرایط-مجوز-و-لایسنس-اختصاصی--license"><img src="https://img.shields.io/badge/License-LCSL--1.0-orange?style=for-the-badge" alt="License LCSL 1.0" /></a>
   <a href="https://github.com/pooriyayt/liquid-messenger"><img src="https://img.shields.io/badge/GitHub-pooriyayt%2Fliquid--messenger-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo" /></a>
@@ -78,7 +78,7 @@
 
 3. **ارسال پیام‌های زمان‌بندی‌شده هوشمند (Scheduled Messages):**
    - زمان‌بندی پیام‌ها برای تحویل در ساعت، روز و تاریخ آینده با تقویم و ساعت استاندارد.
-   - صف مستقل از موقعیت زمانی سرور و کلاینت همراه با پشتیبانی بدون نقص از رمزنگاری انتها‌به‌انتها.
+   - صف مستقل از موقعیت زمانی و تحویل خودکار با ذخیره‌سازی رمزنگاری‌شده در دیتابیس سمت سرور.
 
 4. **سیستم صوتی و ویدیویی پیشرفته:**
    - ضبط پیام صوتی همراه با رقص امواج فرکانسی زنده (Dynamic Waveform Visualizer).
@@ -108,7 +108,7 @@
    - High-performance micro-particle physics simulation with directional drift velocity (outgoing dissolves rightward, incoming dissolves leftward) locking 60 FPS performance.
 
 3. **Smart Scheduled Messages Dispatcher:**
-   - Schedule messages with date/time selectors; queued securely in the background and delivered across any client/server timezone without encryption breakage.
+   - Schedule messages with date/time selectors; queued securely in the background and delivered across any timezone with encrypted server-side storage.
 
 4. **Live Audio Waveforms & Video Circles:**
    - Real-time frequency waveform audio recording and interactive voice playback.
@@ -148,13 +148,13 @@
 
 ## 🔒 امنیت و معماری رمزنگاری / Security & Cryptography
 
-1. **رمزنگاری انتها‌به‌انتها (End-to-End Encryption):**
-   - پیاده‌سازی متقارن رمزنگاری پیام‌ها سمت مرورگر با استفاده از ماژول استاندارد کلاینت `Web Cryptography API` و الگوریتم `AES-256-GCM`.
-   - کلیدهای رمزنگاری در نشست‌های محلی کاربر ایزوله هستند و متن خام پیام‌ها بدون کلید معتبر روی سرور ذخیره نمی‌شود.
+1. **رمزنگاری جامع داده‌ها و پیام‌ها در سمت سرور (Server-Side at-Rest Encryption):**
+   - تمامی پیام‌های متنی، پیام‌های زمان‌بندی‌شده، مکالمات و متادیتای چت با استفاده از کلید قدرتمند سرور (`APP_ENC_KEY`) و الگوریتم پیشرفته `AES-256` به صورت رمزگذاری‌شده در دیتابیس MySQL ذخیره می‌شوند (هیچ پیام متنی به صورت خام در دیتابیس نگهداری نمی‌شود).
+   - کلیه عملیات رمزنگاری و رمزگشایی به صورت متمرکز و ایزوله در لایه امن بک‌اند (PHP) پردازش شده و پس از اعتبارسنجی نشست‌های کاربری ارسال می‌گردد.
 
-2. **رمزنگاری در حالت سکون فایل‌ها (At-Rest Server Encryption):**
-   - تمامی تصاویر، ویس‌ها، ویدیوها و فایل‌های پیوست پیش از ذخیره‌سازی روی دیسک با کلید سرور (`APP_ENC_KEY`) رمزگذاری می‌شوند.
-   - دسترسی به فایل‌ها صرفاً از طریق اسکریپت امنیتی `api/file.php` با اعتبارسنجی توکن امضاشده HMAC امکان‌پذیر است.
+2. **رمزنگاری در حالت سکون فایل‌ها و رسانه‌ها (Encrypted Media Storage):**
+   - تمامی تصاویر، ویس‌ها، ویدیوها و فایل‌های پیوست پیش از ذخیره‌سازی روی دیسک هاست با کلید سرور (`APP_ENC_KEY`) رمزگذاری می‌شوند.
+   - دسترسی، رمزگشایی در لحظه و دانلود فایل‌ها صرفاً از طریق اسکریپت امنیتی `api/file.php` با اعتبارسنجی توکن‌های امضاشده HMAC امکان‌پذیر است.
 
 3. **قفل امنیتی درون‌برنامه‌ای (In-App Passcode Lock):**
    - قفل صفحه با پین‌کد اختصاصی و کیپد لمسی.
