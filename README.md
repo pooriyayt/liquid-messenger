@@ -22,13 +22,14 @@
 
 ---
 
-> [!IMPORTANT]
-> ### 🤖 سلب مسئولیت و شفاف‌سازی / Disclaimer & Transparency
-> **🇮🇷 فارسی:**  
-> این پروژه **صرفاً به صورت تفریحی، آزمایشی و با هوش مصنوعی (AI-Generated & Recreational Project)** طراحی و ساخته شده است. هدف از ساخت این مخزن، تست توانایی‌های هوش مصنوعی در پیاده‌سازی معماری وب، بررسی استانداردهای رابط کاربری تلگرام وب و سرگرمی برنامه‌نویسی تجربی بوده است.
+> [!NOTE]
+> ### 🤖 شفاف‌سازی توسعه | Development Transparency
 > 
-> **🇬🇧 English:**  
-> This project was developed **purely for recreational and experimental purposes with Artificial Intelligence (AI)**. It serves as an exploration of AI-assisted full-stack development, Telegram Web Z design patterns, and experimental web messaging.
+> **🇮🇷 فارسی**  
+> این پروژه با رویکردی آزمایشی و غیرتجاری، برای پاسخ به یک نیاز عملی و به‌منظور ارزیابی کاربرد هوش مصنوعی در توسعه‌ی نرم‌افزار ایجاد شده است. فرایند طراحی و پیاده‌سازی آن با بهره‌گیری از ابزارهای هوش مصنوعی انجام شده و به‌عنوان محصولی رسمی یا آماده‌ی بهره‌برداری تجاری ارائه نمی‌شود.
+> 
+> **🇬🇧 English**  
+> This project was created as a non-commercial, experimental effort to address a practical need and to evaluate the role of AI in software development. Its design and implementation were carried out with the assistance of AI tools, and it is not presented as a formal or production-ready product.
 
 ---
 
