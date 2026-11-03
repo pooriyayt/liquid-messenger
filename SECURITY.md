@@ -1,31 +1,41 @@
-# Security Policy
+# 🛡️ سیاست امنیت و گزارش آسیب‌پذیری | Security Policy
 
-Liquid Chat takes the security and privacy of its users very seriously.
-
----
-
-## 🔒 Supported Versions
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 2.x     | :white_check_mark: |
-| 1.x     | :x:                |
+پروژه **Liquid Messenger** یک پیام‌رسان آزمایشی و سلف‌هاستد (Self-Hosted) است. امنیت اطلاعات و حفاظت از داده‌های کاربران در اولویت قرار دارد.
 
 ---
 
-## 🛡️ Reporting a Vulnerability
+## 🔒 نسخه‌های تحت پشتیبانی | Supported Versions
 
-If you discover a security vulnerability in Liquid Chat, **please do not open a public issue.**
+تنها آخرین نسخه و کدهای شاخه اصلی (`main`) در مخزن رسمی گیت‌هاب پشتیبانی می‌شوند و اصلاحیه‌ها روی این شاخه اعمال خواهند شد:
 
-Instead, please report the vulnerability confidentially:
-- Submit an advisory through GitHub Security Advisories, OR
-- Send an email with reproduction details and proof-of-concept to the repository maintainer.
+| شاخه / نسخه | وضعیت پشتیبانی | توضیحات |
+| :--- | :---: | :--- |
+| `main` (آخرین نسخه مخزن) | :white_check_mark: | تمامی رفع باگ‌ها و اصلاحیه‌ها روی این برنچ پوش می‌شوند |
 
-### What to include in your report:
-1. Type of issue (e.g. SQL Injection, XSS, CSRF, Cryptographic flaw, Auth bypass)
-2. Location and component affected
-3. Step-by-step instructions to reproduce
-4. Potential impact and severity
-5. Suggested remediation (if known)
+---
 
-We will respond promptly and coordinate a fix and release before public disclosure.
+## ⚠️ نکات امنیتی مهم هنگام استقرار (Self-Hosting Best Practices)
+
+اگر این پروژه را روی سرور شخصی یا اشتراکی میزبانی می‌کنید، رعایت موارد زیر برای حفظ امنیت ضروری است:
+
+1. **غیرفعال‌سازی حالت دیباگ:** مقدار `APP_DEBUG` در فایل `.env` باید حتماً روی `false` تنظیم شده باشد تا خطاهای داخلی پایگاه داده برای کاربران نمایش داده نشود.
+2. **کلید اختصاصی رمزنگاری سرور:** کلید `APP_ENC_KEY` را حتماً به صورت تصادفی و اختصاصی با دستور `openssl rand -base64 32` بسازید و هرگز از کلیدهای پیش‌فرض استفاده نکنید.
+3. **الزام پروتکل HTTPS:** پیام‌رسان باید حتماً پشت گواهی SSL معتبر اجرا شود تا کوکی‌های نشست با فلگ `Secure` و قابلیت‌های وب‌اپ (PWA) به درستی کار کنند.
+4. **حفاظت از فایل‌های حساس:** اطمینان حاصل کنید دسترسی به فایل‌های `.env` و پوشه `includes/` از طریق وب‌سرور (Nginx / Apache) به صورت مستقیم مسدود باشد (این مورد در فایل‌های پیش‌فرض `.htaccess` و `nginx.conf` تعبیه شده است).
+
+---
+
+## 🚨 نحوه گزارش آسیب‌پذیری‌های امنیتی | Reporting a Vulnerability
+
+اگر آسیب‌پذیری یا مشکلی امنیتی (مانند SQL Injection، XSS، دور زدن احراز هویت یا باگ در استریم فایل‌ها) مشاهده کردید:
+
+* **لطفاً از باز کردن Issue عمومی خودداری فرمایید.**
+* گزارش خود را به صورت محرمانه از طریق بخش **[GitHub Security Advisory](https://github.com/pooriyayt/liquid-messenger/security/advisories/new)** ارسال نمایید.
+
+### اطلاعات مورد نیاز در گزارش:
+1. نوع آسیب‌پذیری و بخش مربوطه (مثلاً اندپوینت API، احراز هویت یا فایل آپلود)
+2. مراحل مرحله‌به‌مرحله برای بازتولید مشکل (PoC / Steps to Reproduce)
+3. میزان اثرگذاری و سناریوی احتمالی سوءاستفاده
+4. پیشنهاد اصلاحی یا پچ در صورت وجود
+
+گزارش شما بررسی شده و در صورت تایید، اصلاحیه مربوطه به شاخه `main` اضافه خواهد شد.
