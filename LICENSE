@@ -1,0 +1,173 @@
+Liquid Chat Community Source License v1.0 (LCSL-1.0)
+Copyright (c) 2026 Liquid Chat Authors & Contributors. All rights reserved.
+
+================================================================================
+IMPORTANT NOTICE - PLEASE READ CAREFULLY BEFORE USING OR HOSTING THIS SOFTWARE:
+================================================================================
+
+This software and associated documentation files (the "Software") are provided 
+under the terms of this Liquid Chat Community Source License ("License"). 
+By downloading, cloning, installing, copying, or using this Software, you agree 
+to be bound by the terms and conditions outlined below. If you do not agree, 
+do not use, host, or distribute this Software.
+
+--------------------------------------------------------------------------------
+1. PERMITTED USES (Grant of License)
+--------------------------------------------------------------------------------
+Subject to the terms and restrictions of this License, the authors grant you a 
+non-exclusive, royalty-free, worldwide license to:
+  a. Inspect, review, download, and study the source code.
+  b. Install, host, and run the Software on private servers, self-hosted VPS, 
+     containers, or local development environments for personal, non-commercial, 
+     educational, and internal organizational communication.
+  c. Create private modifications and custom extensions strictly for personal 
+     or internal private deployment within your own organization.
+
+--------------------------------------------------------------------------------
+2. STRICT PROHIBITIONS & RESTRICTIONS (Anti-Plagiarism & Brand Protection)
+--------------------------------------------------------------------------------
+  a. NO RE-BRANDING OR IDENTITY ALTERATION:
+     You may NOT alter, obscure, remove, or replace the project name ("Liquid Chat"), 
+     logos, trade dress, copyright notices, author credits, or in-app branding. 
+     Distributing, presenting, or publicizing the Software or any derivative work 
+     under a different brand, trade name, or author identity is strictly prohibited.
+
+  b. NO UNAUTHORIZED REDISTRIBUTION & FORKING:
+     You may NOT republish, re-host, mirror, or distribute the Software or any 
+     derivative work as an independent, splintered, or competitor product under 
+     your own or a third-party's name.
+
+  c. NO COMMERCIAL RESALE OR WHITE-LABELING:
+     You may NOT sell, sublicense, rent, lease, or charge licensing fees for 
+     the Software, its source code, compiled bundles, or white-labeled versions 
+     thereof. Offering a paid public SaaS (Software as a Service) messenger using 
+     this Software under a separate brand is explicitly forbidden without prior 
+     written authorization from the original authors.
+
+--------------------------------------------------------------------------------
+3. MODIFICATIONS & MANDATORY UPSTREAM CONTRIBUTIONS (Pull-Request Rule)
+--------------------------------------------------------------------------------
+We believe in community-driven advancement while protecting the integrity of 
+the original project:
+  a. If you develop improvements, security patches, optimizations, or new 
+     features that you wish to make available to the public, you MUST submit 
+     them upstream to the official Liquid Chat repository via a Pull Request (PR).
+  b. The authors reserve the right to review, audit, refine, and merge qualifying 
+     pull requests into the official release.
+  c. Forking for the sole purpose of distributing a rebranded duplicate is a 
+     direct violation of this License and will result in immediate termination 
+     of your rights.
+
+--------------------------------------------------------------------------------
+4. PRESERVATION OF COPYRIGHT & TRADEMARKS
+--------------------------------------------------------------------------------
+All copies, full or partial, must retain the original copyright notice, the text 
+of this License, and all original credits in the user interface (including 
+"About", footer, and header attribution).
+
+--------------------------------------------------------------------------------
+5. TERMINATION
+--------------------------------------------------------------------------------
+Any violation of the restrictions stated in this License immediately and 
+automatically revokes all rights granted to you hereunder. Upon termination, 
+you must immediately cease all use, hosting, and distribution of the Software 
+and destroy all copies in your possession.
+
+--------------------------------------------------------------------------------
+6. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL 
+THE AUTHORS, COPYRIGHT HOLDERS, OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, 
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING 
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+IN THE SOFTWARE.
+
+================================================================================
+================================================================================
+ترجمه رسمی فارسی مجوز اختصاصی لیکوئید چت (LCSL-1.0)
+مجوز منبع اشتراکی جامعه لیکوئید چت - نسخه ۱.۰
+حق نشر (c) ۲۰۲۶ مؤلفین و مشارکت‌کنندگان لیکوئید چت. تمامی حقوق محفوظ است.
+================================================================================
+
+اطلاعیه مهم - لطفاً قبل از استفاده یا میزبانی این نرم‌افزار، این متن را به دقت مطالعه فرمایید:
+
+این نرم‌افزار و کلیه مستندات مربوط به آن (که از این پس «نرم‌افزار» نامیده می‌شود)
+تحت شرایط این «مجوز منبع اشتراکی جامعه لیکوئید چت» ارائه می‌گردد. با دانلود، کلون،
+نصب، کپی یا استفاده از این نرم‌افزار، شما موافقت می‌نمایید که به شرایط و ضوابط زیر
+پایبند باشید. در صورت عدم پذیرش این شرایط، اجازه استفاده، میزبانی یا توزیع این
+نرم‌افزار را نخواهید داشت.
+
+--------------------------------------------------------------------------------
+۱. استفاده‌های مجاز (اعطای مجوز)
+--------------------------------------------------------------------------------
+مشروط به رعایت کلیه بندها و محدودیت‌های این مجوز، مؤلفین مجوزی غیرانحصاری،
+جهانی و بدون دریافت حق امتیاز (Royalty-free) برای موارد زیر به شما اعطا می‌نمایند:
+  الف) مشاهده، بررسی، دانلود و مطالعه سورس‌کد نرم‌افزار.
+  ب) نصب، میزبانی و اجرای نرم‌افزار بر روی سرورهای خصوصی، سرورهای مجازی (VPS)،
+     کانتینرها یا محیط‌های توسعه محلی جهت مقاصد شخصی، غیرتجاری، آموزشی، پژوهشی و
+     ارتباطات داخلی سازمان یا تیم خودتان.
+  ج) ایجاد تغییرات خصوصی و افزونه‌های سفارشی که منحصراً برای استقرار خصوصی درون
+     مجموعه یا استفاده شخصی خودتان باشد.
+
+--------------------------------------------------------------------------------
+۲. ممنوعیت‌ها و محدودیت‌های سخت‌گیرانه (حفاظت از برند و مالکیت فکری)
+--------------------------------------------------------------------------------
+  الف) ممنوعیت تغییر نام و هویت بصری (No Re-branding):
+     شما مجاز نیستید نام پروژه ("Liquid Chat" / "لیکوئید چت")، لوگوها، هویت بصری،
+     اعلان‌های حق نشر، نام سازندگان اصلی و نشان‌های داخل برنامه را تغییر دهید،
+     حذف کنید یا بپوشانید. انتشار، ارائه یا تبلیغ این نرم‌افزار یا هرگونه محصول
+     مشتق‌شده از آن تحت برند، نام تجاری یا هویت توسعه‌دهنده دیگر اکیداً ممنوع است.
+
+  ب) ممنوعیت بازنشر یا فورک غیرمجاز (No Unauthorized Redistribution):
+     شما مجاز نیستید این نرم‌افزار یا بخش‌های اصلی آن را به عنوان یک پروژه موازی،
+     جداشده (Splintered Fork) یا محصول رقیب به نام خود یا به نام اشخاص ثالث بازنشر
+     کرده یا در مخازن عمومی بازتوزیع نمایید.
+
+  ج) ممنوعیت فروش تجاری یا وایت‌لیبل (No Commercial Resale / White-labeling):
+     شما اجازه فروش سورس‌کد، فروش بسته‌های کامپایل‌شده، اعطای مجوز فرعی (Sublicense)
+     یا اجاره دادن این نرم‌افزار را ندارید. همچنین راه‌اندازی و ارائه سرویس‌های عمومی
+     پیام‌رسان ابری پولی (SaaS) بر پایه این سورس با برندی دیگر بدون اخذ مجوز رسمی و
+     کتبی از مؤلفین اصلی کاملاً ممنوع است.
+
+--------------------------------------------------------------------------------
+۳. تغییرات و الزام مشارکت بالادستی (قانون Pull Request)
+--------------------------------------------------------------------------------
+ما به پیشرفت مشارکتی جامعه توسعه‌دهندگان در عین حفظ یکپارچگی پروژه باور داریم:
+  الف) در صورتی که هرگونه بهبود، بهینه‌سازی، رفع باگ امنیتی یا قابلیت جدیدی را روی
+     نرم‌افزار پیاده‌سازی کردید که قصد انتشار عمومی آن را دارید، ملزم هستید آن را
+     منحصراً از طریق ارسال Pull Request (PR) به مخزن اصلی گیت‌هاب پروژه لیکوئید چت
+     ارائه نمایید.
+  ب) تیم مؤلفین حق بررسی، آزمون، بهبود و ادغام (Merge) پول ریکوئست‌های واجد شرایط
+     را در نسخه‌های رسمی برای خود محفوظ می‌دارد.
+  ج) فورک کردن پروژه تنها با هدف انتشار یک نسخه کپی تحت نامی دیگر، نقض آشکار این
+     مجوز بوده و موجب لغو فوری کلیه حقوق استفاده خواهد شد.
+
+--------------------------------------------------------------------------------
+۴. حفظ اعلان‌های حق نشر و اعتبارات (Preservation of Notices)
+--------------------------------------------------------------------------------
+در تمامی نسخه‌ها و کپی‌های پروژه، چه به صورت جزئی یا کلی، باید متن اصلی حق نشر،
+متن کامل این مجوز و تمامی لینک‌ها و اعتبارات مؤلفین اصلی در واسط کاربری نرم‌افزار
+(شامل بخش درباره ما، پاورقی و هدرها) به صورت دست‌نخورده حفظ گردند.
+
+--------------------------------------------------------------------------------
+۵. لغو و فسخ مجوز (Termination)
+--------------------------------------------------------------------------------
+هرگونه سرپیچی یا نقض شرایط و محدودیت‌های مندرج در این سند، بلافاصله و به صورت
+خودکار موجب لغو کلیه حقوق اعطا شده به شما خواهد شد. به محض فسخ مجوز، شما موظفید
+فوراً هرگونه استفاده، میزبانی و توزیع نرم‌افزار را متوقف کرده و کلیه نسخه‌های
+در اختیار خود را منهدم نمایید.
+
+--------------------------------------------------------------------------------
+۶. سلب مسئولیت و حدود تعهدات قانونی (Disclaimer of Warranty)
+--------------------------------------------------------------------------------
+این نرم‌افزار «به همان صورتی که هست» (AS IS) و بدون هرگونه ضمانت صریح یا ضمنی، از جمله
+ضمانت‌های قابلیت تجاری، مناسب بودن برای یک هدف خاص، مالکیت یا عدم نقض حقوق دیگران
+ارائه می‌گردد. مؤلفین و توسعه‌دهندگان اصلی هیچ‌گونه مسئولیتی در قبال هرگونه خسارت،
+زیان داده‌ها یا تعهدات ناشی از استفاده یا عدم امکان استفاده از این نرم‌افزار نخواهند داشت.
+
+================================================================================
+جهت استعلام مجوزها، همکاری‌های تجاری یا دریافت تاییدیه‌های رسمی:
+Liquid Chat Project: https://github.com/liquid-chat/liquid-chat
+================================================================================

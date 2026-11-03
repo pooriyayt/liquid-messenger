@@ -1,0 +1,30 @@
+RewriteEngine On
+
+# 1) Force HTTPS (ریدایرکت فقط برای http → https)
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 2) ساپورت URL بدون پسوند → فایل php (بدون ریدایرکت)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [QSA,L]
+
+# (اختیاری) اگر html هم داری
+# RewriteCond %{REQUEST_FILENAME}.html -f
+# RewriteRule ^(.+)$ $1.html [L]
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), payment=(), usb=(), interest-cohort=(), microphone=(self), camera=(self)"
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+    Header always set Cross-Origin-Resource-Policy "same-origin"
+    Header always set Cross-Origin-Embedder-Policy "unsafe-none"
+    Header always unset X-Powered-By
+
+    # HSTS only when HTTPS is on.
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+    # CSP is set in PHP to include per-request nonces.
+</IfModule>

@@ -1,0 +1,58 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Sensitive Configuration & Environment Files
+includes/config.php
+.env
+.env.local
+.env.*.local
+installed.lock
+storage/installed.lock
+
+# Cryptographic Keys & Secrets
+storage/vapid_keys.json
+*.pem
+*.key
+*.crt
+
+# Uploaded User Media (Keep folder structure, ignore contents)
+uploads/images/*
+!uploads/images/.gitkeep
+uploads/voice/*
+!uploads/voice/.gitkeep
+uploads/files/*
+!uploads/files/.gitkeep
+app/uploads/images/*
+!app/uploads/images/.gitkeep
+app/uploads/voice/*
+!app/uploads/voice/.gitkeep
+app/uploads/files/*
+!app/uploads/files/.gitkeep
+
+# Logs & Debugging
+logs/*
+!logs/.gitkeep
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Backup & Archive Files
+*.zip
+*.tar.gz
+*.rar
+*.bak
+*.backup
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Agent & AI Cache Directories
+.agents/
+graphify-out/
+.system_generated/

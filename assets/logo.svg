@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Liquid Chat">
+  <defs>
+    <linearGradient id="lc-gradient" x1="12" y1="10" x2="52" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#39d6a4"/>
+      <stop offset="1" stop-color="#4cc9f0"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="52" height="52" rx="16" fill="url(#lc-gradient)"/>
+  <path d="M22 19h20a10 10 0 0 1 10 10v7a10 10 0 0 1 -10 10H31l-7 7v-7h-2a10 10 0 0 1 -10 -10v-7a10 10 0 0 1 10 -10z" fill="#ffffff"/>
+  <path d="M32 30a4 4 0 0 1 8 0v3h2a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2H30a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2h2v-3zm2 0v3h4v-3a2 2 0 1 0 -4 0z" fill="#0f5a60"/>
+</svg>
